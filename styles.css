@@ -55,18 +55,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* End of modern css reset*/
-
-body{
-  display: flex;
+.container{
+  display:flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 #imageCarousel{
   overflow: hidden;
   height: 300px;
   width: 250px;
-  border: solid black;
+  border-radius: 100%;
+  margin: 5px;
 }
 
 #imageSlides{
@@ -74,10 +75,25 @@ body{
   position: relative;
   height: 300px;
   width: 750px;
-  border: solid blue;
 }
 
 .slide{
   height: 300px;
   width: 300px;
 }
+
+.buttons:nth-child(1){
+  display:flex;
+  position: absolute;
+  gap: 300px;
+  top: 135px;
+  z-index: 2;
+}
+
+.buttons:nth-child(1) > button{
+  background: none;
+  border:none;
+  cursor: pointer;
+}
+
+

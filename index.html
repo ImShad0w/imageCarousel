@@ -8,6 +8,11 @@
   </head>
   <body>
     <h1>Image carousel</h1>
+    <div class="container">
+    <div class="buttons">
+      <button id="left"><img src="left.svg" alt="left" width="50"></button>
+      <button id="right"><img src="right.svg" alt="right" width="50"></button>
+    </div>
     <div id="imageCarousel">
       <div id="imageSlides">
         <div class="slide"><img src="slide1.jpg" alt="slide1" width="300" height="300"></div>
@@ -15,6 +20,12 @@
         <div class="slide"><img src="slide3.png" alt="slide3" width="300" height="300"></div>
       </div>
     </div>
+    <div class="buttons">
+        <input type="radio" class="sliderSelec" name="slide" value="0"></input>
+        <input type="radio" class="sliderSelec"name="slide"  value="1"></input>
+        <input type="radio" class="sliderSelec"name="slide"  value="2"></input>
+      </div>
+      </div>
   </body>
   <script src="script.js"></script>
 </html>
